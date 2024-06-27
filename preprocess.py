@@ -4,7 +4,6 @@ from preprocess_sub import exec_process
 
 def process_for_train(pm):
     exec_process(pm)
-
     logging.info(
         '[hunmin log] the end line of the function [process_for_train]')
 
