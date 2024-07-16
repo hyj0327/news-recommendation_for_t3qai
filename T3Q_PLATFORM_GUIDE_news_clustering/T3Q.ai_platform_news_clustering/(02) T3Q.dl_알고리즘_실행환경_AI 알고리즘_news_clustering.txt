@@ -1,0 +1,106 @@
+# 알고리즘_실행환경_AI 알고리즘_news_clustering
+
+AI훈민정음 >> 알고리즘 >> 실행 환경
+
+1. 실행환경 목록 >> 새 실행 환경 버튼 클릭
+
+실행환경명 	env
+템플릿  	General
+설명 		Perspecive News 훈련 및 서비스를 위한 실행환경
+
+1) Requirements
+=================================================
+# Platform Requirements.
+t3qai_client==1.1.6
+=================================================
+
+2) Dockerfile
+=================================================
+# 베이스 이미지 설정
+FROM nvidia/cuda:11.8.0-cudnn8-devel-ubuntu20.04
+
+
+ARG DEBIAN_FRONTEND=noninteractive
+
+# Python 3.9 설치를 위한 의존성 패키지 업데이트 및 설치
+RUN apt-get update && apt-get install -y \
+    software-properties-common \
+    && add-apt-repository ppa:deadsnakes/ppa \
+    && apt-get update && apt-get install -y \
+    python3.9 \
+    python3.9-distutils \
+    python3.9-venv \
+    python3.9-dev \
+    wget \
+    git \
+    && rm -rf /var/lib/apt/lists/*
+
+# Python3.9을 기본 Python으로 설정 및 pip 설치
+RUN update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.9 1 \
+    && update-alternatives --install /usr/bin/python python /usr/bin/python3.9 1 \
+    && wget https://bootstrap.pypa.io/get-pip.py \
+    && python get-pip.py \
+    && rm get-pip.py
+    
+# pip 최신 버전으로 업그레이드
+RUN apt-get update
+RUN apt-get -y install libpq-dev
+RUN pip install --upgrade pip
+
+# libraries for operservice
+RUN pip install --no-input kubernetes pygresql pyjwt pyarrow pandas \
+        flask flask-sqlalchemy flask-cors flask-bcrypt flask-migrate flask-restful flask-rest-jsonapi
+
+# 필요한 Python 패키지 설치
+RUN pip install numpy==1.26.4 \
+        pandas==2.2.2 \
+        pytorch-lightning==1.2.8 \
+        transformers==4.23.0 \
+        mecab-ko-msvc==0.999 \
+        mecab-ko-dic-msvc==0.999 \
+        Cython==0.29.37 \
+        kss==6.0.4 \
+        bertopic==0.16.2 \
+        sentence-transformers==2.2.2 \
+        scikit-learn==1.4.2 \
+        beautifulsoup4==4.12.3 \
+        requests==2.32.3 \
+        faiss-gpu \
+        ipywidgets
+
+RUN pip install torch==2.2.0 torchvision==0.17.0 torchaudio==2.2.0 --index-url https://download.pytorch.org/whl/cu118  
+        
+        
+#플랫폼 사용 필요
+ADD ./requirements.txt /work/requirements.txt
+RUN pip3 install --upgrade pip
+RUN pip install -r /work/requirements.txt
+
+
+USER root
+
+RUN mkdir -p /mldatas
+RUN mkdir -p /data
+RUN mkdir -p /data/aip
+RUN mkdir -p /data/aip/logs
+
+WORKDIR /work
+=================================================
+
+저장
+
+2. 실행환경 목록 >> 실행환경 추가
+
+env	더보기
+
+더보기 버튼 누르고
+
+Step 3. 실행환경 빌드
+
+빌드 상태	시작전
+
+빌드 버튼 누르고
+
+빌드 완료 후
+
+로그 확인 및 저장

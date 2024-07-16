@@ -1,0 +1,34 @@
+# T3Q.dl_학습_학습 모델 설계_image_classification
+
+AI훈민정음 >> 학습 >> 학습 모델
+
+1.  학습 모델 메뉴에서 새 학습 모델 버튼 클릭
+
+새 학습 모델
+
+학습모델명	 train
+
+1) Step 1. 학습 데이터 선택
+
+데이터셋	전처리데이터셋(체크)		사용안함
+
+preprocess			preprocess
+
+2) Step 2. 모델 설계
+문제유형 Transform
+
+알고리즘 summary_train
+
+평가방법
+None
+
+3) Step 3. 상세 설계
+알고리즘 선택 시 상세 설계가 가능합니다. ( step 2. 먼저 진행 )
+-
+
+저장
+
+
+
+
+

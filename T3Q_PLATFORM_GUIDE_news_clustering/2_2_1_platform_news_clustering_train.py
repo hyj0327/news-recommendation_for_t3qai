@@ -1,13 +1,15 @@
 # train.py
-
 import logging
 import os
+
 from train_sub import exec_train
 import t3qai_client as tc
-from t3qai_client import T3QAI_TRAIN_OUTPUT_PATH, T3QAI_TRAIN_MODEL_PATH, T3QAI_TRAIN_DATA_PATH, T3QAI_TEST_DATA_PATH, T3QAI_MODULE_PATH
+from t3qai_client import T3QAI_TRAIN_OUTPUT_PATH, T3QAI_TRAIN_MODEL_PATH, \
+    T3QAI_TRAIN_DATA_PATH, T3QAI_TEST_DATA_PATH, T3QAI_MODULE_PATH
 
 
 def main():
+    logging.info('[train.py] main() start')
     result = None
     result_msg = "success"
     tc.train_start()

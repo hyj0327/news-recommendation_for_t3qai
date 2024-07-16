@@ -1,0 +1,62 @@
+# 알고리즘_전처리 알고리즘_news_clustering
+
+AI훈민정음 >> 알고리즘 >> 전처리 알고리즘
+
+1. 전처리 알고리즘 메뉴 선택 후 새 전처리 알고리즘 버튼 누르고 전처리 알고리즘 등록
+
+새 전처리 알고리즘 
+
+1) 기본 정보 
+
+전처리 알고리즘명		preprocess model
+실행환경 선택			preprocess_env
+GPU 지원 여부			GPU 지원(체크)
+
+2) 입력 형태
+
+file
+
+3) 출력 형태
+
+default
+
+4) 파라미터
+-
+
+5) 소스 코드
+
+파일 업로드 버튼 누르고
+
+preprocess.py
+
+preprocess_sub.py
+
+LICENSE.txt
+
+README.txt
+
+platform_process.txt
+
+위 5개의 파일을 압축한
+
+T3Q.ai_platform_news_clustering_preprocess.zip
+
+파일을 선택하여 파일을 업로드함
+
+(1) 실행모듈 /preprocess.py
+	    /preprocess_sub.py
+	    /LICENSE.txt
+	    /README.txt
+	    /platform_process.txt
+
+preprocess.py 파일 선택하고
+
+마우스 우클릭하여 실행모듈 선택함
+
+(2) 선택파일 /preprocess.py
+	    /preprocess_sub.py
+	    /LICENSE.txt
+	    /README.txt
+	    /platform_process.txt
+
+저장

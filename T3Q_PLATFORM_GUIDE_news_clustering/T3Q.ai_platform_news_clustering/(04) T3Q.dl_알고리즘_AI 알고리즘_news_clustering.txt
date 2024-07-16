@@ -1,0 +1,86 @@
+# 알고리즘_AI 알고리즘_image_classification
+
+AI훈민정음 >> 알고리즘 >> AI 알고리즘
+
+1. AI 알고리즘 메뉴 선택 후 새 AI 알고리즘 버튼 누르고 AI 알고리즘 등록
+
+새 AI 알고리즘
+
+1) 기본 정보 
+
+알고리즘명	    /preprocess_sub.py
+설명			요약모델 훈련
+문제유형		Transfrom
+실행환경		env
+GPU 지원		체크
+
+2) 공통 파라미터
+
+초기화 방법				미사용
+최적화 방법				미사용
+Learning Rate			미사용
+Dropout Ratio			미사용
+랜덤 seed				미사용
+자동저장 주기			미사용
+학습수행횟수			미사용
+배치 사이즈				미사용
+
+3) 모델 파라미터
+-
+
+4) 시각화 설정
+
+(1) 결과 차트
+Accuracy						
+Loss							
+Confusion Matrix				
+MAPE
+Precision/Recall/F1-score		
+PCA 2D
+
+
+5) 소스 코드
+
+파일 업로드 버튼 누르고
+
+train.py
+
+train_sub.py
+
+inference_service.py
+
+inference_service_sub.py
+
+LICENSE.txt
+
+README.txt
+
+platform_process.txt
+
+위 7개의 파일을 압축한
+
+T3Q.ai_platform_news_clustering_train_inferece_service.zip
+
+파일을 선택하여 파일을 업로드함
+
+(1) 실행모듈	/train.py
+		/train_sub.py
+		/inference_service.py
+		/inference_service_sub.py
+		/LICENSE.txt
+		/README.txt
+		/platform_process.txt
+
+/train.py 파일 선택하고
+
+마우스 우클릭하여 실행모듈 선택함
+
+(2) 선택파일	/train.py
+		/train_sub.py
+		/inference_service.py
+		/inference_service_sub.py
+		/LICENSE.txt
+		/README.txt
+		/platform_process.txt
+
+저장

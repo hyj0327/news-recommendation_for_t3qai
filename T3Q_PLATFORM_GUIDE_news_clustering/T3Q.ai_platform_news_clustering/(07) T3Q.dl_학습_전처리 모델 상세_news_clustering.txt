@@ -1,0 +1,43 @@
+# T3Q.dl_학습_전처리 모델 상세_news_clustering
+
+AI훈민정음 >> 학습 >> 전처리 모델
+
+1. 전처리 모델 상세 페이지에서 전처리 수행
+
+전처리 모델 상세
+
+1) Step 1. 기본 정보
+모델명  		preprocess
+참조 데이터셋 	news_clustering_dataset
+
+2) Step 2. 데이터셋 컬럼정보
+	사용여부	컬럼		데이터 분포도	타입		ID	  LABEL
+1	right		dataset					 file		left	left
+
+3) Step 3. 전처리 룰 정보	
+
+소스컬럼		전처리룰
+dataset		preprocess_model
+
+4) Step 4. 전처리 실행정보
+
+번호	전처리명			데이터셋				처리시작일시	처리종료일시	상태		전처리
+1	preprocess		news_clustering_dataset		없음			없음			등록		상세/실행/중단/삭제  
+
+위 실행 버튼을 눌러 전처리를 수행함
+상태 완료 확인 후
+
+5) 전처리 상세
+
+(1) 전처리 상세 버튼 누름
+
+(2) 진행상황 확인
+현재 전처리의 진행상황 확인이 가능합니다
+
+이름			처리시작일			처리종료일			상태		로그
+0_preprocess model		2024-07-06 01:21:36	완료		2024-07-06 01:21:54
+
+(3) 0_preprocess model	 - 로그 버튼 누르면 로그를 확인할 수 있음
+
+2. 학습 모델 설계 버튼 클릭
+

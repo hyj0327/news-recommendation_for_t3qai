@@ -1,0 +1,48 @@
+# T3Q.dl_학습_데이터셋_news_clustering
+
+AI훈민정음 >> 학습 >> 데이터셋
+
+1. T3Q.dl >> 프로젝트 목록 >> AI훈민정음
+
+해당 프로젝트 선택하고
+
+2. AI훈민정음 >> 학습 >> 데이터셋
+
+새 데이터셋 버튼 클릭
+
+1) 새 데이터셋 등록
+===================================================
+(1) 로컬에서 파일 업로드
+
+데이터셋 명  news_clustering_dataset
+
+Drag & drop Files here
+
+또는
+
+Open the file Browser
+
+를 이용하여
+
+dataset.zip 파일을
+
+데이터셋으로 등록한 후
+
+dataset.zip - Status: Upload Complete 확인하고
+
+저장
+
+====================================================
+(2) 파일뷰어 연동하여 업로드 
+
+데이터셋 명  news_clustering_dataset
+
+선택 경로 
+
+데이터셋 등록 전 FileViewer 메뉴에서 사용자 임의의 폴더를 만들고 데이터셋을 업로드
+(예를 들면 AI_HUNMIN / image_classification / collection / dataset.zip 경로에 데이터셋을 사전 업로드)
+ 
+데이터셋 등록 메뉴에서 사전에 업로드한 경로의 데이터셋 폴더를 선택하고
+
+저장
+
